@@ -16,7 +16,7 @@ def echo_server(port):
   sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
   # Bind the socket to the port
   server_address = (host, port)
-  print "Starting up echo server on %s post %s" % server_address
+  print "Starting up echo server on %s port %s" % server_address
   sock.bind(server_address)
   # Listen to clients, backlog argument specifies the max no. of queued 
   # connections
